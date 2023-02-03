@@ -6,7 +6,9 @@ require("dotenv").config();
 const morgan = require("morgan");
 
 const { TODOLIST } = require("./db/models");
-// const path = require("path");
+const path = require("path");
+
+const indexRouter = require("./routes/routes.index");
 
 const renderTemplate = require("./lib/renderTemplate");
 const Main = require("./views/Main");
@@ -16,7 +18,9 @@ const app = express();
 app.use(morgan("dev"));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-// app.use(express.static(path.join(__dirname, "public/")));
+app.use(express.static(path.join(__dirname, "public/")));
+
+app.use("/", indexRouter);
 
 app.get("/", async (req, res) => {
   try {

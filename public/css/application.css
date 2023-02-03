@@ -1,0 +1,52 @@
+body {
+  background-color: lightblue;
+  font-family: Verdana;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+div {
+  margin: 5px 5px;
+}
+
+div p {
+  color: #8c8c8c;
+  font-size: 7pt;
+  margin: 3px 30px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+/* 
+article p span.points:after {
+  content: " points";
+}
+
+article p span.username:before {
+  content: " by ";
+}
+
+article p span.timestamp:after {
+  content: ' minutes ago';
+}
+
+article p span.comment-count:before {
+  content: ' | ';
+}
+
+article p span.comment-count:after {
+  content: ' comments | ';
+}
+
+article p a.delete {
+  text-decoration: none;
+  color: #8C8C8C;
+  text-decoration: none;
+}
+
+article p a.delete:before {
+  content: ' delete this post';
+
+} */
